@@ -6,6 +6,7 @@ const multer = require("multer");
 const app = express();
 const bodyParser = require('body-parser');
 const PORT = 4500;
+require("dotenv").config();
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
